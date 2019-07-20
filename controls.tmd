@@ -1,0 +1,50 @@
+<[file][][]
+    <[modelmanager][][]
+	
+        <[pointer_list_tmcontrol][ControlObjects][]
+
+            <[control_cylinder][DirectionalGyroAdjust][4]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][2.147 0.03418 -0.03049]>
+                <[matrix3_float64][B0][  0.984808  0.0  0.173648  0.0  1.0  0.0 -0.173648  0.0  0.984808  ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.1]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][DirectionalGyroAdjust]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.015]>
+            >	
+            <[control_cylinder][PressureSetting][2]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][2.163 -0.059 0.06217  ]>
+                <[matrix3_float64][B0][  0.984808  0.0  0.173648  0.0  1.0  0.0 -0.173648  0.0  0.984808  ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.02]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][PressureSetting]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.004]>
+                <[float64][Length][0.012]>
+            >			
+            <[control_cylinder][AttitudeAdjust][2]
+                <[string8][Type][knob]>
+                <[vector3_float64][R0][2.16 0 0.070]> 
+                <[matrix3_float64][B0][  0.984808  0.0  0.173648  0.0  1.0  0.0 -0.173648  0.0  0.984808  ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepAngle][0.02]>
+                <[control_message][OnRotate][]
+                    <[string8][Message][AttitudeAdjust]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][1.0]>
+                >
+                <[float64][Radius][0.005]>
+                <[float64][Length][0.011]>
+            >
+        >
+    >
+>
