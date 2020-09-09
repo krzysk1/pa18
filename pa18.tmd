@@ -5,7 +5,7 @@
 	// YASim model: Emmanuel Baranger (3D/FDM)
 	// 3D model: Emmanuel Baranger (3D/FDM)
 	// Compilation: Krzysztof Kaniewski
-	// Date: Sat Feb 23 2019; Jul 2019; Aug 2020 
+	// Date: Sat Feb 23 2019; Jul 2019; Sep 2020 
 	//-------------------------------------
 
     <[modelmanager][][]
@@ -20,6 +20,7 @@
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
                 <[string8][BrakePosition][LeftBrakeInput.Output]>
                 <[string8][FlapPosition][FlapsInput.Output]>
+                <[tmvector2d][FlapPositions][ (0.0 0.00) (0.50 0.10) (1.0 0.50) ]>				
                 <[tmvector3d][LookAtPosition][ 0.8 0 0.5 ]>
             >
             <[event_value][DEV0][]
@@ -628,7 +629,10 @@
                 <[float64][RatedPower][59656]>
                 <[float64][Displacement][0.001211]>
             >
-
+			<[output][RotationSpeed][]
+                <[string8][Input][DriveShaft.RotationSpeed]>
+            >
+			
             // throttle
             <[input_lever][ThrottleInput][]
                 <[string8][Input][Controls.Throttle1]>
