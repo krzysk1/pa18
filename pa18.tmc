@@ -1,33 +1,33 @@
 <[file][][]
     <[object][][]
         <[int][Version][210]>
-        <[vec32array][ContactSpheres][ (1.893 0.887 -1.312 0.04) (1.893 -0.887 -1.312 0.04) (-3.203 0 -0.224 0.04) ]>
-        <[string8][DisplayName][Piper PA 18]>
-        <[string8][DescriptionTextEN][The Piper PA-18 Super Cub is a two-seat, single-engine monoplane. Introduced in 1949 by Piper Aircraft, it was developed from the Piper PA-11, and traces its lineage back through the J-3 to the Taylor E-2 Cub of the 1930s. In close to 40 years of production, over 9,000 were built. Super Cubs are commonly found in roles such as bush flying, banner and glider towing. (from Wikipedia)
-Converted from FlightGear by Krzysztof Kaniewski, 3D model by Emmanuel Baranger (3D/FDM).]>
+        <[vec32array][ContactSpheres][ (1.887 0.8791 -1.095 0.215) (1.887 -0.8791 -1.095 0.215) (-3.266 0 -0.188 0.0877) ]>
+        <[string8][DisplayName][Piper PA-18 Supercub]>
+        <[string8][DescriptionTextEN][The Piper PA-18 Super Cub is a two-seat, single-engine monoplane. Introduced in 1949 by Piper Aircraft, it was developed from the Piper PA-11, and traces its lineage back through the J-3 to the Taylor E-2 Cub of the 1930s. Super Cubs was fitted with an electrical system, flaps (3 notches), and a considerably more powerful engine (150 hp), are commonly found in roles such as bush flying, banner and glider towing. (from Wikipedia)
+Aerofly FS2 aircraft made by Krzysztof Kaniewski, 3D model by lucas-pl.]>
         <[float64][WingSpan][10.7]>
-        <[float64][Mass][421.8]>
-        <[float64][MinimumSpeed][20]>
+        <[float64][Mass][422]>
+        <[float64][MinimumSpeed][18.5]>
         <[float64][ApproachSpeed][40]>
         <[float64][CruiseSpeed]  [100]>
-        <[float64][MaximumSpeed] [170]>
-        <[tmvector2d][FlapSpeedRange][ 20 25 ]>
+        <[float64][MaximumSpeed] [55]>
+        <[tmvector2d][FlapSpeedRange][ 18.5 37 ]>
         <[tmvector2d][NormalSpeedRange][ 20 50 ]>
-        <[tmvector2d][CautionSpeedRange][ 50 170 ]>
-        <[float64][MaximumAltitude][7200]>
-        <[float64][CruiseAltitude] [6000]>
+        <[tmvector2d][CautionSpeedRange][ 50 55 ]>
+        <[float64][MaximumAltitude][6492.2]>
+        <[float64][CruiseAltitude] [5791.2]>
         <[float64][QSpan][10.7]>
-        <[float64][QMass][421.8]>
-        <[float64][QSpeed][100]>
-        <[float64][QPower][59655.9]>
+        <[float64][QMass][794.0]>
+        <[float64][QSpeed][56.4]>
+        <[float64][QPower][110000]>
         <[float64][QThrust][0]>
-        <[float64][QRange][300000.0]>
+        <[float64][QRange][740000.0]>
         <[float64][QRatio][0.0]>
-        <[float64][QBuild][1300]>
-        <[float64][QVirgin][1972]>
+        <[float64][QBuild][15000]>
+        <[float64][QVirgin][1949]>
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.174533) (1.0 0.873) ]>			
         <[bool][Airplane][true]>
         <[bool][Flaps][true]>
-        <[string8][Pilot][]>
+        <[string8][Pilot][pilot_robert]>
     >
 >
