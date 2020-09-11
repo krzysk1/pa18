@@ -19,7 +19,7 @@
                 <[string8][Airspeed][AirspeedIndicator.IndicatedAirspeed]>
                 <[string8][BrakePosition][LeftBrakeInput.Output]>
                 <[string8][FlapPosition][FlapsInput.Output]>
-                <[tmvector2d][FlapPositions][ (0.0 0.00) (0.50 0.10) (1.0 0.50) ]>
+                <[tmvector2d][FlapPositions][ (0.0 0.00) (0.50 0.15) (1.0 0.40) ]>
                 <[tmvector3d][LookAtPosition][ 1.28 0.0 0.1 ]>
             >
             <[event_value][DEV0][]
@@ -896,7 +896,7 @@
                 <[float64][Threshold][0.1]>
             >
             <[sender][SenderFlapMaximum][]
-                <[string8][Input][0.698132]>
+                <[string8][Input][0.698]>
                 <[string8][Message][Aircraft.Flaps]>
                 <[string8][Qualifiers][maximum]>
             >
@@ -1106,17 +1106,17 @@
             <[rigidbodygraphics][Fuselage][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][GeometryList][ Fuselage FuselageMetal Firewall NacelleFront Nacelle NacelleClick NacelleClick2 Cage CageBlack  CageMetal RightDoor Glass GlassInterior Motor MotorAlu Pipe Cooler TailLinkage TailSupport TailGearSupport Filter Chair Interior Panel Structure CopilotChair Handles Face Fond Vitre Aircraft Bouton AiFace AiFond AiVitre AltimeterFace AltimeterFond Pressureset AltimeterVitre BallEnclosure Bezel TurnFace TurnVitre HDGKnob HDGgauge HDGpointer HdgVitre VsiFace VsiFond VsiVitre ]>
+                <[string8][GeometryList][ Fuselage FuselageMetal Firewall NacelleFront Nacelle NacelleClick NacelleClick2 Cage CageBlack  CageMetal RightDoor Glass GlassInterior Motor MotorAlu Pipe Cooler TailLinkage TailSupport TailGearSupport Filter Chair Interior Panel Structure CopilotChair Handles Face Fond Vitre Aircraft Bouton AiFace AiFond AiVitre AltimeterFace AltimeterFond Pressureset AltimeterVitre BallEnclosure Bezel TurnFace TurnVitre HDGKnob HDGgauge HDGpointer HdgVitre VsiFace VsiFond VsiVitre RightFuselageDecal LeftFuselageDecal ]>
             >
             <[rigidbodygraphics][LeftWing][]
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
-                <[string8][GeometryList][ LeftWing LeftWingMirror LeftWingLamp LeftWingSupport LeftWingLinkage LeftCaps ]>
+                <[string8][GeometryList][ LeftWing LeftWingMirror LeftWingLamp LeftWingSupport LeftWingLinkage LeftCaps LeftWingDecal ]>
             >
             <[rigidbodygraphics][RightWing][]
                 <[uint32][PositionID][RightWing.R]>
                 <[uint32][OrientationID][RightWing.Q]>
-                <[string8][GeometryList][ RightWing RightWingMirror RightWingLamp RightWingSupport RightWingLinkage RightCaps ]>
+                <[string8][GeometryList][ RightWing RightWingMirror RightWingLamp RightWingSupport RightWingLinkage RightCaps RightWingDecal ]>
             >
             // Navigation lights
             <[graphics_input][UniversalTime][]
@@ -1291,7 +1291,7 @@
                 <[tmvector3d][Pivot][-2.909 0 0.307]>
             >
             <[hingedbodygraphics][Rudder][]
-                <[string8][GeometryList][ Rudder RudderMetal RudderLink RudderMirror RudderLamp ]>
+                <[string8][GeometryList][ Rudder RudderMetal RudderLink RudderMirror RudderLamp RightLogoDecal LeftLogoDecal ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][ServoRudder.Output]>
