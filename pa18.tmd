@@ -211,7 +211,7 @@
 
             // leftgear
             <[rigidbody][LeftGear][]
-                <[float64][Mass][9.5]>
+                <[float64][Mass][13.5]>
                 <[tmvector3d][InertiaLength][ 0.42 0.2 0.8 ]>
                 <[tmvector3d][R0][ 1.887 0.672 -0.9 ]>
                 <[tmmatrix3d][B0][ 1.0 0.0 0.0  0.0 0.70711 0.70711  0.0 -0.70711 0.70711 ]>
@@ -221,14 +221,14 @@
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][R0][  1.887 0.3215 -0.6371 ]>
                 <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
-                <[float64][Kp][25000.0]>
-                <[float64][Kd][500.0]>
+                <[float64][Kp][15000.0]>
+                <[float64][Kd][200.0]>
                 <[uint32][Type][0]>
             >
 
             // rightgear
             <[rigidbody][RightGear][]
-                <[float64][Mass][9.5]>
+                <[float64][Mass][13.5]>
                 <[tmvector3d][InertiaLength][ 0.42 0.2 0.8 ]>
                 <[tmvector3d][R0][ 1.887 -0.672 -0.9 ]>
                 <[tmmatrix3d][B0][ 1.0 0.0 0.0  0.0 0.70711 -0.70711  0.0 0.70711 0.70711 ]>
@@ -238,8 +238,8 @@
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][R0][  1.887 -0.3215 -0.6371 ]>
                 <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
-                <[float64][Kp][25000.0]>
-                <[float64][Kd][500.0]>
+                <[float64][Kp][15000.0]>
+                <[float64][Kd][200.0]>
                 <[uint32][Type][0]>
             >
 
@@ -278,12 +278,12 @@
 
             // wheels
             <[wheel][LeftWheelHull][]
-                <[float64][K][88900]>
-                <[float64][D][762]>
-                <[float64][Radius][0.215]>
-                <[float64][Width][0.194]>
+                <[float64][K][88900]>		 
+                <[float64][D][762]>			 
+                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Width][0.311]>    //standard wheel = 0.194 bush wheel = 0.311 
                 <[float64][RimRadius][0.077]>
-                <[float64][Inflation][124105.6]>
+                <[float64][Inflation][24105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
                 <[string8][Body][LeftGear]>
                 <[tmvector3d][R0][1.887 0.8791 -1.095]>
                 <[string8][InputBrake][LeftBrakeInput.Output]>
@@ -297,11 +297,11 @@
             >
             <[wheel][RightWheelHull][]
                 <[float64][K][88900]>
-                <[float64][D][762]>
-                <[float64][Radius][0.215]>
-                <[float64][Width][0.194]>
+                <[float64][D][762]>			 
+                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Width][0.311]>    //standard wheel = 0.194 bush wheel = 0.311 
                 <[float64][RimRadius][0.077]>
-                <[float64][Inflation][124105.6]>
+                <[float64][Inflation][24105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
                 <[string8][Body][RightGear]>
                 <[tmvector3d][R0][1.887 -0.8791 -1.095]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
@@ -1215,7 +1215,6 @@
                 <[uint32][PositionID][LeftWing.R]>
                 <[uint32][OrientationID][LeftWing.Q]>
                 <[uint32][AngleID][ServoLeftAileron.Output]>
-          //      <[float64][AngleMax][0.261799]>
                 <[tmvector3d][Axis][0.0 0.999957 0.008897]>
                 <[tmvector3d][Pivot][0.65 3.3562 0.5914]>
             >
@@ -1343,13 +1342,13 @@
                 <[uint32][AttachTo][1]>
             >
             <[graphics_wheel][LeftWheel][]
-                <[string8][GeometryList][ LeftWheel LeftWheelTire ]>
+                <[string8][GeometryList][ LeftWheel LeftWheelTire LeftBushTire ]>
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
                 <[uint32][AngleID]      [LeftWheelHull.RotationAngle]>
                 <[uint32][GroundID]     [LeftWheelHull.Ground]>
                 <[uint32][DeformationID][LeftWheelHull.Deformation]>
-                <[float64][Radius][0.215]>
+                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
                 <[float64][RimRadius][0.077]>
                 <[tmvector3d][Axis][0 1 0]>
                 <[tmvector3d][Pivot][1.887 0.8791 -1.095]>
@@ -1373,16 +1372,16 @@
                 <[string8][GeometryList][ RightGearLowerLink ]>
                 <[tmvector3d][Joint0][1.91 -0.0375 -0.8654]>
                 <[tmvector3d][Joint1][1.91 -0.654 -1.0949]>
-                <[uint32][AttachTo][12]>
+                <[uint32][AttachTo][1]>
             >
             <[graphics_wheel][RightWheel][]
-                <[string8][GeometryList][ RightWheel RightWheelTire ]>
+                <[string8][GeometryList][ RightWheel RightWheelTire RightBushTire ]>
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
                 <[uint32][AngleID]      [RightWheelHull.RotationAngle]>
                 <[uint32][GroundID]     [RightWheelHull.Ground]>
                 <[uint32][DeformationID][RightWheelHull.Deformation]>
-                <[float64][Radius][0.215]>
+                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
                 <[float64][RimRadius][0.077]>
                 <[tmvector3d][Axis][0 1 0]>
                 <[tmvector3d][Pivot][1.887 -0.8791 -1.095]>
