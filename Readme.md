@@ -9,6 +9,10 @@ Thanks to him.
  Some features may not work as intended and this aircraft could crash your AeroflyFS2. 
  Use it at your own risk!
 
-Installation
+Installation:
 
 1. Unzip file and move the folder "pa18" to C:\Users\~\Documents\Aerofly FS2\aircraft.
+
+Repaints:
+
+Folder repaint has template to change registration number. You can create complete new livery using template from original 3D model (link above)
