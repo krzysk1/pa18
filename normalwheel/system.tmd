@@ -1,0 +1,33 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmuniverse][DynamicObjects][]
+
+        >
+        <[pointer_list_tmgraphics][GraphicObjects][]
+            <[graphics_wheel][LeftWheel][]
+                <[string8][GeometryList][ LeftWheel LeftWheelTire ]>
+                <[uint32][PositionID][LeftGear.R]>
+                <[uint32][OrientationID][LeftGear.Q]>
+                <[uint32][AngleID]      [LeftWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [LeftWheelHull.Ground]>
+                <[uint32][DeformationID][LeftWheelHull.Deformation]>
+                <[float64][Radius][0.215]>
+                <[float64][RimRadius][0.077]>
+                <[tmvector3d][Axis][0 1 0]>
+                <[tmvector3d][Pivot][1.887 0.8791 -1.095]>
+            >
+            <[graphics_wheel][RightWheel][]
+                <[string8][GeometryList][ RightWheel RightWheelTire ]>
+                <[uint32][PositionID][RightGear.R]>
+                <[uint32][OrientationID][RightGear.Q]>
+                <[uint32][AngleID]      [RightWheelHull.RotationAngle]>
+                <[uint32][GroundID]     [RightWheelHull.Ground]>
+                <[uint32][DeformationID][RightWheelHull.Deformation]>
+                <[float64][Radius][0.215]>
+                <[float64][RimRadius][0.077]>
+                <[tmvector3d][Axis][0 1 0]>
+                <[tmvector3d][Pivot][1.887 -0.8791 -1.095]>
+            >
+        >
+    >
+>

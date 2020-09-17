@@ -38,7 +38,7 @@
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
                 <[string8][Tags][cockpit pilot]>
                 <[bool][InCockpit][true]>
-            >1
+            >
             <[camera][CameraRightWing][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -5.55 -5.36 1.51 ]>
@@ -280,10 +280,10 @@
             <[wheel][LeftWheelHull][]
                 <[float64][K][88900]>		 
                 <[float64][D][762]>			 
-                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
-                <[float64][Width][0.311]>    //standard wheel = 0.194 bush wheel = 0.311 
+                <[float64][Radius][0.215]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Width][0.194]>    //standard wheel = 0.194 bush wheel = 0.311 
                 <[float64][RimRadius][0.077]>
-                <[float64][Inflation][24105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
+                <[float64][Inflation][124105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
                 <[string8][Body][LeftGear]>
                 <[tmvector3d][R0][1.887 0.8791 -1.095]>
                 <[string8][InputBrake][LeftBrakeInput.Output]>
@@ -298,10 +298,10 @@
             <[wheel][RightWheelHull][]
                 <[float64][K][88900]>
                 <[float64][D][762]>			 
-                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
-                <[float64][Width][0.311]>    //standard wheel = 0.194 bush wheel = 0.311 
+                <[float64][Radius][0.215]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Width][0.194]>    //standard wheel = 0.194 bush wheel = 0.311 
                 <[float64][RimRadius][0.077]>
-                <[float64][Inflation][24105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
+                <[float64][Inflation][124105.6]> //standard wheel = 124105.6 bush wheel = 24105.6
                 <[string8][Body][RightGear]>
                 <[tmvector3d][R0][1.887 -0.8791 -1.095]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
@@ -1342,13 +1342,13 @@
                 <[uint32][AttachTo][1]>
             >
             <[graphics_wheel][LeftWheel][]
-                <[string8][GeometryList][ LeftWheel LeftWheelTire LeftBushTire ]>
+                <[string8][GeometryList][ LeftWheel LeftWheelTire ]> // LeftBushTire
                 <[uint32][PositionID][LeftGear.R]>
                 <[uint32][OrientationID][LeftGear.Q]>
                 <[uint32][AngleID]      [LeftWheelHull.RotationAngle]>
                 <[uint32][GroundID]     [LeftWheelHull.Ground]>
                 <[uint32][DeformationID][LeftWheelHull.Deformation]>
-                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Radius][0.215]>   //standard wheel = 0.215 bush wheel =  0.391
                 <[float64][RimRadius][0.077]>
                 <[tmvector3d][Axis][0 1 0]>
                 <[tmvector3d][Pivot][1.887 0.8791 -1.095]>
@@ -1375,13 +1375,13 @@
                 <[uint32][AttachTo][1]>
             >
             <[graphics_wheel][RightWheel][]
-                <[string8][GeometryList][ RightWheel RightWheelTire RightBushTire ]>
+                <[string8][GeometryList][ RightWheel RightWheelTire ]> //RightBushTire
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
                 <[uint32][AngleID]      [RightWheelHull.RotationAngle]>
                 <[uint32][GroundID]     [RightWheelHull.Ground]>
                 <[uint32][DeformationID][RightWheelHull.Deformation]>
-                <[float64][Radius][0.391]>   //standard wheel = 0.215 bush wheel =  0.391
+                <[float64][Radius][0.215]>   //standard wheel = 0.215 bush wheel =  0.391
                 <[float64][RimRadius][0.077]>
                 <[tmvector3d][Axis][0 1 0]>
                 <[tmvector3d][Pivot][1.887 -0.8791 -1.095]>
@@ -3877,22 +3877,22 @@
 
             // wheels
             <[soundinput][GroundRollLoadTail][]
-                <[uint32][InputID][GroundRollLoadTail.Output]>
+                <[uint32][InputID][GroundRollSpeedTailWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedTail][]
-                <[uint32][InputID][GroundRollSpeedTail.Output]>
+                <[uint32][InputID][GroundRollSpeedTailWheelHull.Output]>
             >
             <[soundinput][GroundRollLoadLeft][]
-                <[uint32][InputID][GroundRollLoadLeft.Output]>
+                <[uint32][InputID][GroundRollSpeedLeftWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedLeft][]
-                <[uint32][InputID][GroundRollSpeedLeft.Output]>
+                <[uint32][InputID][GroundRollSpeedLeftWheelHull.Output]>
             >
             <[soundinput][GroundRollLoadRight][]
-                <[uint32][InputID][GroundRollLoadRight.Output]>
+                <[uint32][InputID][GroundRollSpeedRightWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedRight][]
-                <[uint32][InputID][GroundRollSpeedRight.Output]>
+                <[uint32][InputID][GroundRollSpeedRightWheelHull.Output]>
             >
             <[soundmapping][GroundRollFactorTail][]
                 <[string8][Input][GroundRollLoadTail.Output]>
