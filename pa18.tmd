@@ -3877,19 +3877,19 @@
 
             // wheels
             <[soundinput][GroundRollLoadTail][]
-                <[uint32][InputID][GroundRollSpeedTailWheelHull.Output]>
+                <[uint32][InputID][GroundRollLoadTailWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedTail][]
                 <[uint32][InputID][GroundRollSpeedTailWheelHull.Output]>
             >
             <[soundinput][GroundRollLoadLeft][]
-                <[uint32][InputID][GroundRollSpeedLeftWheelHull.Output]>
+                <[uint32][InputID][GroundRollLoadLeftWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedLeft][]
                 <[uint32][InputID][GroundRollSpeedLeftWheelHull.Output]>
             >
             <[soundinput][GroundRollLoadRight][]
-                <[uint32][InputID][GroundRollSpeedRightWheelHull.Output]>
+                <[uint32][InputID][GroundRollLoadRightWheelHull.Output]>
             >
             <[soundinput][GroundRollSpeedRight][]
                 <[uint32][InputID][GroundRollSpeedRightWheelHull.Output]>
